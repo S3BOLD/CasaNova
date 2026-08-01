@@ -4,7 +4,7 @@ import { ChefHat, BedDouble, Armchair, Bath, Package, LayoutGrid } from 'lucide-
 // CONFIGURAÇÃO — edite aqui os dados do evento
 // ---------------------------------------------------------------------
 export const CONFIG = {
-  hostNames: ['Amanda', 'Leticia'],
+  hostNames: ['Amanda Leticia'],
   dateNum: '20',
   dateLabel: 'de setembro',
   address: 'Rua ???',
