@@ -42,7 +42,6 @@ export default function Hero() {
         <p className="eyebrow">Chá de casa nova</p>
         <h1 className="hosts-title">
           {CONFIG.hostNames[0]}
-          <span className="amp">&amp;</span>
           {CONFIG.hostNames[1]}
         </h1>
         <div className="mini-divider">

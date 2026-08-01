@@ -4,11 +4,11 @@ import { ChefHat, BedDouble, Armchair, Bath, Package, LayoutGrid } from 'lucide-
 // CONFIGURAÇÃO — edite aqui os dados do evento
 // ---------------------------------------------------------------------
 export const CONFIG = {
-  hostNames: ['Ana', 'Bruno'],
+  hostNames: ['Amanda', 'Leticia'],
   dateNum: '20',
   dateLabel: 'de setembro',
-  address: 'Rua das Flores, 123',
-  note: 'Reserve um presente e venha celebrar essa conquista comigo!',
+  address: 'Rua ???',
+  note: 'Pensa em algo',
 };
 
 export const CATEGORIES = ['Cozinha', 'Quarto', 'Sala', 'Banheiro', 'Diversos'];
