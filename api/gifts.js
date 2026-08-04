@@ -8,17 +8,22 @@ export default async function handler(req, res) {
     }
 
     if (req.method === 'POST') {
-      const { action, id, name, gift } = req.body || {};
+      const { action, id, name, index, gift } = req.body || {};
 
       if (action === 'claim') {
         if (!id) return res.status(400).json({ error: 'Faltou o id do presente.' });
-        const gifts = await claimGift(id, name);
-        return res.status(200).json({ gifts });
+        try {
+          const gifts = await claimGift(id, name);
+          return res.status(200).json({ gifts });
+        } catch (err) {
+          if (err.code === 'FULL') return res.status(409).json({ error: err.message });
+          throw err;
+        }
       }
 
       if (action === 'unclaim') {
         if (!id) return res.status(400).json({ error: 'Faltou o id do presente.' });
-        const gifts = await unclaimGift(id);
+        const gifts = await unclaimGift(id, index);
         return res.status(200).json({ gifts });
       }
 

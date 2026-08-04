@@ -63,17 +63,17 @@ export function useGifts() {
       setGifts(list);
     } catch (err) {
       console.error(err);
-      alert('Não conseguimos salvar sua escolha agora. Tente novamente em alguns segundos.');
+      alert(err.message || 'Não conseguimos salvar sua escolha agora. Tente novamente em alguns segundos.');
     }
   }, []);
 
-  const unclaim = useCallback(async (id) => {
+  const unclaim = useCallback(async (id, index) => {
     try {
-      const list = await postAction({ action: 'unclaim', id });
+      const list = await postAction({ action: 'unclaim', id, index });
       setGifts(list);
     } catch (err) {
       console.error(err);
-      alert('Não conseguimos desfazer essa escolha agora. Tente novamente em alguns segundos.');
+      alert(err.message || 'Não conseguimos desfazer essa escolha agora. Tente novamente em alguns segundos.');
     }
   }, []);
 

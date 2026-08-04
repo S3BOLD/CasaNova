@@ -42,7 +42,7 @@ export default function Dashboard({ stats, activeFilter, onSelect, onSuggestClic
           <div className="ring-pct">{pct}%</div>
         </div>
         <div className="overview-text">
-          <strong>{stats.claimed}</strong> de {stats.total} escolhidos
+          <strong>{stats.claimed}</strong> de {stats.total} vagas preenchidas
         </div>
       </div>
 
