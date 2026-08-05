@@ -784,6 +784,17 @@ button {
   .page {
     padding: 30px 16px 70px;
   }
+  .reference-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .reference-item img {
+    height: 140px;
+  }
+  .reference-item figcaption {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   * {
