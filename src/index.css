@@ -773,6 +773,7 @@ button {
   .dash-nav-item .frac {
     font-size: 10px;
   }
+  
 }
 @media (max-width: 520px) {
   .hero {
@@ -794,6 +795,21 @@ button {
   .reference-item figcaption {
     padding: 8px 10px;
     font-size: 12px;
+  }
+   .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .card {
+    padding: 14px;
+    gap: 8px;
+  }
+  .item-name {
+    font-size: 16px;
+  }
+  .claim-btn {
+    padding: 8px 10px;
+    font-size: 13px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
