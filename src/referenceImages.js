@@ -45,6 +45,46 @@ export const REFERENCE_IMAGES = [
     src:'https://http2.mlstatic.com/D_NQ_NP_2X_833495-MLB82421261479_022025-F-kit-4pcs-cozinha-escorredor-massa-arroz-telado-cesto-fritura.webp',
     link:'https://www.mercadolivre.com.br/kit-4pcs-cozinha-escorredor-massa-arroz-telado-cesto-fritura/up/MLBU3008878235?pdp_filters=item_id%3AMLB3974524573&matt_tool=38524122#origin=share&sid=share&wid=MLB3974524573&action=copy',
     caption: 'Escorredores'
-  }
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_872431-MLU72855739980_112023-F.webp',
+    link:'https://www.mercadolivre.com.br/mop-giratorio-fit-3-em-1-mop9379-cinza-flash-limp-cinza/p/MLB19738013?pdp_filters=item_id%3AMLB4722745611&attributes=COLOR%3AMLB19738013&matt_tool=38524122#origin=share&sid=share&wid=MLB4722745611&action=copy',
+    caption: 'Mop Giratório'
+  },
+  {
+    src:'https://m.media-amazon.com/images/I/51nhsklFyEL._AC_SX679_.jpg',
+    link:'https://a.co/d/00FDPu5U',
+    caption: 'Formas grandes'
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_981634-MLA114600248639_072026-F.webp',
+    link:'https://www.mercadolivre.com.br/kit-5-tigelas-bowl-redondas-em-aco-inox-para-preparo-e-servir-master-cook/p/MLB75495019?pdp_filters=item_id%3AMLB7176573630&matt_tool=38524122#origin=share&sid=share&wid=MLB7176573630&action=copy',
+    caption: 'Tigelas Bowl'
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_658680-MLA99600121444_122025-F.webp',
+    link:'https://www.mercadolivre.com.br/kit-12-utensilios-de-silicone-com-cabo-de-madeira-marca-aristus-com-alta-resistencia-duravel-e-com-design-moderno-perfeito-para-sua-cozinha-cor-cinza/p/MLB57662272?pdp_filters=item_id%3AMLB6834079956&matt_tool=38524122#origin=share&sid=share&wid=MLB6834079956&action=copy',
+    caption: 'Kit itensilios  '
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_958284-MLA99496908752_112025-F.webp',
+    link:'https://www.mercadolivre.com.br/batedeira-bella-massa-mondial-500w-b-23-np/p/MLB16368824?pdp_filters=item_id%3AMLB2009171518&attributes=COLOR%3AMLB16368824%2CVOLTAGE%3AMLB16368824&matt_tool=38524122#origin=share&sid=share&wid=MLB2009171518&action=copy',
+    caption: 'Batedeira Bella'
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_969346-MLB81970534244_022025-F-abridor-de-latas-automatico-profissional-inox-sem-rebarbas.webp',
+    link:'https://www.mercadolivre.com.br/abridor-de-latas-automatico-profissional-inox-sem-rebarbas/up/MLBU1110685287?pdp_filters=item_id%3AMLB2739749073&matt_tool=38524122#origin=share&sid=share&wid=MLB2739749073&action=copy',
+    caption: 'Abridor de Latas'
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_992424-MLB113413367918_072026-F-jogo-3-frigideiras-inducao-antiaderente-ceramica-pedra.webp',
+    link:'https://www.mercadolivre.com.br/jogo-3-frigideiras-inducao-antiaderente-ceramica-pedra/up/MLBU4324624623?pdp_filters=item_id%3AMLB7185053812&attributes=COLOR%3AMLBU4324624623&matt_tool=38524122#origin=share&sid=share&wid=MLB7185053812&action=copy',
+    caption: 'Kit Frigideiras'
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_998411-MLA115257272447_072026-F.webp',
+    link:'https://www.mercadolivre.com.br/mixer-bmx400p-3-em-1-500w-cor-preto-britania-110v-preto/p/MLB17263867?pdp_filters=item_id%3AMLB5316257202&matt_tool=38524122#origin=share&sid=share&wid=MLB5316257202&action=copy',
+    caption: 'Mixer '
+  },
 ];
   
