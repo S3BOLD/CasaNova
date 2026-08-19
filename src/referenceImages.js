@@ -86,5 +86,40 @@ export const REFERENCE_IMAGES = [
     link:'https://www.mercadolivre.com.br/mixer-bmx400p-3-em-1-500w-cor-preto-britania-110v-preto/p/MLB17263867?pdp_filters=item_id%3AMLB5316257202&matt_tool=38524122#origin=share&sid=share&wid=MLB5316257202&action=copy',
     caption: 'Mixer '
   },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_814669-MLB111144812853_052026-F-kit-porta-guardanapo-e-papel-toalha-bambu-rustico-suporte.webp',
+    link:'https://www.mercadolivre.com.br/kit-porta-guardanapo-e-papel-toalha-bambu-rustico-suporte/up/MLBU3931730427?pdp_filters=item_id%3AMLB6706905800&matt_tool=38524122#origin=share&sid=share&wid=MLB6706905800&action=copy',
+    caption: 'Porta guardanapos e papel toalha – madeira '
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_908773-MLB114046910881_072026-F-jogo-6-tacas-vinho-tinto-450ml-cristal-titanium-gastro.webp',
+    link:'https://www.mercadolivre.com.br/jogo-6-tacas-vinho-tinto-450ml-cristal-titanium-gastro/up/MLBU610020055?pdp_filters=item_id%3AMLB4931476362&matt_tool=38524122#origin=share&sid=share&wid=MLB4931476362&action=copy',
+    caption: 'Taças de vinho'
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_969681-MLA112308821144_062026-F.webp',
+    link:'https://www.mercadolivre.com.br/kit-2-jarras-borossilicato-1-litro-tampa-inox-agua-saborizada-suco-cha-transparente/p/MLB74005625?pdp_filters=item_id%3AMLB4795826183&matt_tool=38524122#origin=share&sid=share&wid=MLB4795826183&action=copy',
+    caption: 'Jarras'
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_868786-MLA114708738712_082026-F.webp',
+    link:'https://www.mercadolivre.com.br/jogo-de-6-copos-alto-320ml-miami-vidro-grosso-moderno-luxo-transparente-quadrado-viacruz/p/MLB77196120?pdp_filters=item_id%3AMLB4964338485&matt_tool=38524122#origin=share&sid=share&wid=MLB4964338485&action=copy',
+    caption: 'Jogo de copo long '
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_717014-MLB111198260186_052026-F-jogo-6-copo-de-vidro-canelado-versalhes-graffiato-420ml-luxo.webp',
+    link:'https://www.mercadolivre.com.br/jogo-6-copo-de-vidro-canelado-versalhes-graffiato-420ml-luxo/up/MLBU3872904904?pdp_filters=item_id%3AMLB4563831335&matt_tool=38524122#origin=share&sid=share&wid=MLB4563831335&action=copy',
+    caption: 'Jogo de copo graffiato '
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_807083-MLB115214008873_072026-F-jogo-6-tacas-caneladas-de-vidro-380ml-transparente.webp',
+    link:'https://www.mercadolivre.com.br/jogo-6-tacas-caneladas-de-vidro-380ml-transparente/up/MLBU4423236150?pdp_filters=item_id%3AMLB7238965536&matt_tool=38524122#origin=share&sid=share&wid=MLB7238965536&action=copy',
+    caption: 'Jogo de taças - Suco'
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_612882-MLB114914038163_072026-F-kit-6-tacas-vidro-canelado-sobremesa-mousse-premium-320ml.webp',
+    link:'https://www.mercadolivre.com.br/kit-6-tacas-vidro-canelado-sobremesa-mousse-premium-320ml/up/MLBU4392752614?pdp_filters=item_id%3AMLB7218647456&matt_tool=38524122#origin=share&sid=share&wid=MLB7218647456&action=copy',
+    caption: 'Taças de sobremesa'
+  },
 ];
   
