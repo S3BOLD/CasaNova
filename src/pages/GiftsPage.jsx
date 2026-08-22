@@ -17,13 +17,25 @@ export default function GiftsPage() {
   }
 
   const stats = useMemo(() => computeStats(gifts), [gifts]);
-  const filteredGifts = activeFilter === 'Todos' ? gifts : gifts.filter((g) => g.category === activeFilter);
+
+  const filteredGifts = useMemo(() => {
+    const filtered =
+      activeFilter === 'Todos'
+        ? gifts
+        : gifts.filter((g) => g.category === activeFilter);
+
+    return [...filtered].sort((a, b) =>
+      (a.name || '').localeCompare(b.name || '', 'pt-BR')
+    );
+  }, [gifts, activeFilter]);
 
   if (error) {
     return (
       <div className="state-msg">
         <p>⚠️ {error}</p>
-        <p className="state-sub">Confira se o BLOB_READ_WRITE_TOKEN está configurado (veja o README.md).</p>
+        <p className="state-sub">
+          Confira se o BLOB_READ_WRITE_TOKEN está configurado (veja o README.md).
+        </p>
       </div>
     );
   }
@@ -45,10 +57,21 @@ export default function GiftsPage() {
 
       <main className="content">
         <div className="grid">
-          {filteredGifts.length === 0 && <div className="empty-msg">Nenhum presente nesta categoria ainda.</div>}
+          {filteredGifts.length === 0 && (
+            <div className="empty-msg">
+              Nenhum presente nesta categoria ainda.
+            </div>
+          )}
+
           {filteredGifts.map((g) => (
-            <GiftCard key={g.id} gift={g} onClaim={claim} onUnclaim={unclaim} />
+            <GiftCard
+              key={g.id}
+              gift={g}
+              onClaim={claim}
+              onUnclaim={unclaim}
+            />
           ))}
+
           <SuggestCard
             open={suggestOpen}
             onOpen={() => setSuggestOpen(true)}

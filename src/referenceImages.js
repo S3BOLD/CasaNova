@@ -17,9 +17,9 @@
 // ---------------------------------------------------------------------
 export const REFERENCE_IMAGES = [
   {
-    src: 'https://http2.mlstatic.com/D_NQ_NP_2X_618189-MLA110999678475_042026-F.webp',
-    link: 'https://www.mercadolivre.com.br/kit-10-potes-hermeticos-alimentos-480-1000-2200ml-paramount/p/MLB23666833?pdp_filters=item_id%3AMLB7183851344&matt_tool=38524122#origin=share&sid=share&wid=MLB7183851344&action=copy', // cole aqui o link da página do produto
-    caption: 'Potes Herméticos Acrilico',
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_902723-MLB112219066782_062026-F-kit-com-7654-3-formas-assadeiras-antiaderentes--tortab.webp',
+    link:'https://www.mercadolivre.com.br/kit-com-7654-3-formas-assadeiras-antiaderentes--tortab/up/MLBU4103933483?pdp_filters=item_id%3AMLB4786689133&attributes=CUSTOM_ESCOLHA%20SEU%20KIT%3AMLBU4103933483&matt_tool=38524122#origin=share&sid=share&wid=MLB4786689133&action=copy',
+    caption: 'Assadeiras'
   },
   {
     src:'https://http2.mlstatic.com/D_NQ_NP_2X_621711-MLA113105526410_072026-F-cobertor-coberdrom-edredom-casal-queen-grosso-macio-inverno.webp',
@@ -27,14 +27,14 @@ export const REFERENCE_IMAGES = [
     caption: 'Coberderom'
   },
   {
+    src: 'https://http2.mlstatic.com/D_NQ_NP_2X_618189-MLA110999678475_042026-F.webp',
+    link: 'https://www.mercadolivre.com.br/kit-10-potes-hermeticos-alimentos-480-1000-2200ml-paramount/p/MLB23666833?pdp_filters=item_id%3AMLB7183851344&matt_tool=38524122#origin=share&sid=share&wid=MLB7183851344&action=copy', // cole aqui o link da página do produto
+    caption: 'Potes Herméticos Acrilico',
+  },
+  {
     src:'https://m.media-amazon.com/images/I/61SGEUH-vXL._AC_SX679_.jpg',
     link:'https://a.co/d/0jemOAyK',
     caption: 'Jogo de Facas'
-  },
-  {
-    src:'https://http2.mlstatic.com/D_NQ_NP_2X_902723-MLB112219066782_062026-F-kit-com-7654-3-formas-assadeiras-antiaderentes--tortab.webp',
-    link:'https://www.mercadolivre.com.br/kit-com-7654-3-formas-assadeiras-antiaderentes--tortab/up/MLBU4103933483?pdp_filters=item_id%3AMLB4786689133&attributes=CUSTOM_ESCOLHA%20SEU%20KIT%3AMLBU4103933483&matt_tool=38524122#origin=share&sid=share&wid=MLB4786689133&action=copy',
-    caption: 'Assadeiras'
   },
   {
     src:'https://oxfordporcelanas.vtexassets.com/arquivos/ids/197001-1200-1200?v=638918289273870000&width=1200&height=1200&aspect=true',
