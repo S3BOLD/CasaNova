@@ -1,4 +1,4 @@
-import { readGifts, claimGift, unclaimGift, addGift } from '../lib/blobStore.js';
+import { readGifts, claimGift, unclaimGift, addGift, editGift, deleteGift } from '../lib/blobStore.js';
 
 export default async function handler(req, res) {
   try {
@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     }
 
     if (req.method === 'POST') {
-      const { action, id, name, index, gift } = req.body || {};
+      const { action, id, name, index, gift, updates } = req.body || {};
 
       if (action === 'claim') {
         if (!id) return res.status(400).json({ error: 'Faltou o id do presente.' });
@@ -30,6 +30,24 @@ export default async function handler(req, res) {
       if (action === 'add') {
         if (!gift || !gift.name) return res.status(400).json({ error: 'Faltou o nome do presente.' });
         const gifts = await addGift(gift);
+        return res.status(200).json({ gifts });
+      }
+
+      if (action === 'edit') {
+        if (!id) return res.status(400).json({ error: 'Faltou o id do presente.' });
+        if (!updates || !updates.name) return res.status(400).json({ error: 'Faltou o nome do presente.' });
+        try {
+          const gifts = await editGift(id, updates);
+          return res.status(200).json({ gifts });
+        } catch (err) {
+          if (err.code === 'NOT_FOUND') return res.status(404).json({ error: err.message });
+          throw err;
+        }
+      }
+
+      if (action === 'delete') {
+        if (!id) return res.status(400).json({ error: 'Faltou o id do presente.' });
+        const gifts = await deleteGift(id);
         return res.status(200).json({ gifts });
       }
 

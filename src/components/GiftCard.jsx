@@ -1,12 +1,18 @@
 import { useState } from 'react';
-import { CATEGORY_ICONS } from '../config.js';
-import { Package, X } from 'lucide-react';
+import { CATEGORIES, CATEGORY_ICONS } from '../config.js';
+import { Package, X, Pencil, Trash2 } from 'lucide-react';
 
-export default function GiftCard({ gift, onClaim, onUnclaim }) {
-  const [editing, setEditing] = useState(false);
+export default function GiftCard({ gift, onClaim, onUnclaim, onEdit, onDelete }) {
+  const [editingClaim, setEditingClaim] = useState(false);
   const [name, setName] = useState('');
-  const Icon = CATEGORY_ICONS[gift.category] || Package;
 
+  const [editingGift, setEditingGift] = useState(false);
+  const [formName, setFormName] = useState(gift.name);
+  const [formCategory, setFormCategory] = useState(gift.category);
+  const [formDesc, setFormDesc] = useState(gift.desc || '');
+  const [formMaxClaims, setFormMaxClaims] = useState(gift.maxClaims || 1);
+
+  const Icon = CATEGORY_ICONS[gift.category] || Package;
   const cap = gift.maxClaims || 1;
   const claimants = gift.claimedBy || [];
   const isMulti = cap > 1;
@@ -14,7 +20,7 @@ export default function GiftCard({ gift, onClaim, onUnclaim }) {
 
   function confirmClaim() {
     onClaim(gift.id, name.trim());
-    setEditing(false);
+    setEditingClaim(false);
     setName('');
   }
 
@@ -25,13 +31,100 @@ export default function GiftCard({ gift, onClaim, onUnclaim }) {
     }
   }
 
+  function openEditForm() {
+    setFormName(gift.name);
+    setFormCategory(gift.category);
+    setFormDesc(gift.desc || '');
+    setFormMaxClaims(gift.maxClaims || 1);
+    setEditingGift(true);
+  }
+
+  function confirmEdit() {
+    if (!formName.trim()) return;
+    onEdit(gift.id, {
+      name: formName.trim(),
+      category: formCategory,
+      desc: formDesc.trim(),
+      maxClaims: formMaxClaims,
+    });
+    setEditingGift(false);
+  }
+
+  function askDelete() {
+    const claimedWarning =
+      claimants.length > 0
+        ? ` Isso também remove ${claimants.length === 1 ? 'a reserva já feita' : `as ${claimants.length} reservas já feitas`} nele.`
+        : '';
+    if (window.confirm(`Tem certeza que quer excluir "${gift.name}"?${claimedWarning} Essa ação não pode ser desfeita.`)) {
+      onDelete(gift.id);
+    }
+  }
+
+  if (editingGift) {
+    return (
+      <div className="card">
+        <div className="edit-form">
+          <input
+            type="text"
+            maxLength={60}
+            placeholder="Nome do presente"
+            value={formName}
+            onChange={(e) => setFormName(e.target.value)}
+            autoFocus
+          />
+          <select value={formCategory} onChange={(e) => setFormCategory(e.target.value)}>
+            {CATEGORIES.map((c) => (
+              <option key={c} value={c}>
+                {c}
+              </option>
+            ))}
+          </select>
+          <textarea
+            placeholder="Descrição (opcional)"
+            maxLength={140}
+            value={formDesc}
+            onChange={(e) => setFormDesc(e.target.value)}
+          />
+          <label className="edit-form-slots">
+            Vagas (quantas pessoas podem reservar)
+            <input
+              type="number"
+              min={1}
+              max={99}
+              value={formMaxClaims}
+              onChange={(e) => setFormMaxClaims(e.target.value)}
+            />
+          </label>
+          <div className="row">
+            <button type="button" onClick={confirmEdit}>
+              Salvar
+            </button>
+            <button type="button" className="cancel" onClick={() => setEditingGift(false)}>
+              Cancelar
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className={`card ${isFull ? 'claimed' : ''}`}>
       <div className="card-top">
         <div className="icon">
           <Icon size={20} strokeWidth={1.4} />
         </div>
-        <span className="category-tag">{gift.category}</span>
+        <div className="card-top-right">
+          <span className="category-tag">{gift.category}</span>
+          <div className="card-actions">
+            <button type="button" className="icon-btn" title="Editar presente" onClick={openEditForm}>
+              <Pencil size={14} />
+            </button>
+            <button type="button" className="icon-btn danger" title="Excluir presente" onClick={askDelete}>
+              <Trash2 size={14} />
+            </button>
+          </div>
+        </div>
       </div>
 
       <p className="item-name">{gift.name}</p>
@@ -68,7 +161,7 @@ export default function GiftCard({ gift, onClaim, onUnclaim }) {
       ) : null}
 
       {!isFull &&
-        (editing ? (
+        (editingClaim ? (
           <div className="name-form">
             <input
               autoFocus
@@ -88,7 +181,7 @@ export default function GiftCard({ gift, onClaim, onUnclaim }) {
               type="button"
               className="cancel"
               onClick={() => {
-                setEditing(false);
+                setEditingClaim(false);
                 setName('');
               }}
             >
@@ -96,7 +189,7 @@ export default function GiftCard({ gift, onClaim, onUnclaim }) {
             </button>
           </div>
         ) : (
-          <button className="claim-btn" onClick={() => setEditing(true)}>
+          <button className="claim-btn" onClick={() => setEditingClaim(true)}>
             {isMulti ? 'Reservar uma vaga' : 'Escolher este presente'}
           </button>
         ))}

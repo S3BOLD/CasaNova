@@ -147,7 +147,11 @@ atualizar manual no painel lateral da aba Presentes.
 - **Concorrência**: se duas pessoas clicarem na última vaga de um presente no
   exato mesmo instante, uma das duas pode ver uma mensagem dizendo que as vagas
   acabaram — nesse caso é só escolher outro presente ou atualizar a página.
-- **Sem autenticação**: qualquer pessoa com o link consegue escolher, desmarcar ou
-  sugerir presentes — não há conta de usuário nem senha.
+- **Sem autenticação**: qualquer pessoa com o link consegue escolher, desmarcar,
+  sugerir, **editar ou excluir** qualquer presente da lista — não há conta de usuário
+  nem senha, nem distinção entre "anfitrião" e "convidado". Isso deixa a gestão da
+  lista mais prática (você e os convidados mexem direto pelo site), mas também
+  significa que qualquer pessoa com o link pode apagar um presente por engano — vale
+  só ter isso em mente antes de espalhar o link.
 - **Plano gratuito**: o Vercel Blob tem uma cota gratuita generosa no plano Hobby —
   um evento com algumas dezenas de convidados fica bem longe do limite.

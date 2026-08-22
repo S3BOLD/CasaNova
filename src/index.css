@@ -495,6 +495,34 @@ button {
   justify-content: space-between;
   gap: 10px;
 }
+.card-top-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.card-actions {
+  display: flex;
+  gap: 2px;
+}
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ink-soft);
+  padding: 4px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-btn:hover {
+  background: var(--bg-panel);
+  color: var(--bronze-dark);
+}
+.icon-btn.danger:hover {
+  background: #f3e2dc;
+  color: #a3402a;
+}
 .icon {
   width: 30px;
   height: 30px;
@@ -514,6 +542,61 @@ button {
   border: 1px solid var(--line);
   border-radius: 999px;
   white-space: nowrap;
+}
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.edit-form input[type='text'],
+.edit-form select,
+.edit-form textarea {
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13.5px;
+  width: 100%;
+}
+.edit-form textarea {
+  resize: vertical;
+  min-height: 44px;
+}
+.edit-form-slots {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+.edit-form-slots input {
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13.5px;
+  width: 80px;
+}
+.edit-form .row {
+  display: flex;
+  gap: 8px;
+}
+.edit-form .row button {
+  flex: 1;
+  background: var(--bronze);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-weight: 600;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+.edit-form .row button.cancel {
+  background: none;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
 }
 .item-name {
   font-family: 'Cormorant Garamond', serif;

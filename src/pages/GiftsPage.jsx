@@ -6,7 +6,7 @@ import { useGifts } from '../hooks/useGifts.js';
 import { computeStats } from '../utils.js';
 
 export default function GiftsPage() {
-  const { gifts, loading, refreshing, error, claim, unclaim, addGift, refresh } = useGifts();
+  const { gifts, loading, refreshing, error, claim, unclaim, addGift, editGift, deleteGift, refresh } = useGifts();
   const [activeFilter, setActiveFilter] = useState('Todos');
   const [suggestOpen, setSuggestOpen] = useState(false);
   const suggestRef = useRef(null);
@@ -69,6 +69,8 @@ export default function GiftsPage() {
               gift={g}
               onClaim={claim}
               onUnclaim={unclaim}
+              onEdit={editGift}
+              onDelete={deleteGift}
             />
           ))}
 

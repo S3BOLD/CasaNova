@@ -87,5 +87,36 @@ export function useGifts() {
     }
   }, []);
 
-  return { gifts, loading, refreshing, error, claim, unclaim, addGift, refresh: () => load(true) };
+  const editGift = useCallback(async (id, updates) => {
+    try {
+      const list = await postAction({ action: 'edit', id, updates });
+      setGifts(list);
+    } catch (err) {
+      console.error(err);
+      alert(err.message || 'Não conseguimos salvar essa edição agora. Tente novamente em alguns segundos.');
+    }
+  }, []);
+
+  const deleteGift = useCallback(async (id) => {
+    try {
+      const list = await postAction({ action: 'delete', id });
+      setGifts(list);
+    } catch (err) {
+      console.error(err);
+      alert(err.message || 'Não conseguimos excluir esse presente agora. Tente novamente em alguns segundos.');
+    }
+  }, []);
+
+  return {
+    gifts,
+    loading,
+    refreshing,
+    error,
+    claim,
+    unclaim,
+    addGift,
+    editGift,
+    deleteGift,
+    refresh: () => load(true),
+  };
 }
