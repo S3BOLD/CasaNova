@@ -23,7 +23,7 @@ export const REFERENCE_IMAGES = [
   },
   {
     src:'https://http2.mlstatic.com/D_NQ_NP_2X_621711-MLA113105526410_072026-F-cobertor-coberdrom-edredom-casal-queen-grosso-macio-inverno.webp',
-    link:'https://www.mercadolivre.com.br/jogo-toalhas-de-algodao-4p-banho-e-rosto-bege-marrom-karsten/up/MLBU2705376355',
+    link:'https://www.mercadolivre.com.br/edredom-sherpa-queen-240x220m-cobertor-e-coberdrom-macio-cor-cinza/p/MLB63613463?pdp_filters=item_id%3AMLB7296834974&matt_tool=38524122#origin=share&sid=share&wid=MLB7296834974&action=copy',
     caption: 'Coberderom'
   },
   {
