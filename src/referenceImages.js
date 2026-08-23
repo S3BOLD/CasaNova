@@ -23,7 +23,7 @@ export const REFERENCE_IMAGES = [
   },
   {
     src:'https://http2.mlstatic.com/D_NQ_NP_2X_621711-MLA113105526410_072026-F-cobertor-coberdrom-edredom-casal-queen-grosso-macio-inverno.webp',
-    link:'https://www.mercadolivre.com.br/cobertor-coberdrom-edredom-casal-queen-grosso-macio-inverno/up/MLBU4274079218?pdp_filters=item_id%3AMLB4871031701&attributes=COLOR%3AMLBU4274079218&matt_tool=38524122#origin=share&sid=share&wid=MLB4871031701&action=copy',
+    link:'https://www.mercadolivre.com.br/jogo-toalhas-de-algodao-4p-banho-e-rosto-bege-marrom-karsten/up/MLBU2705376355',
     caption: 'Coberderom'
   },
   {
@@ -37,14 +37,14 @@ export const REFERENCE_IMAGES = [
     caption: 'Jogo de Facas'
   },
   {
-    src:'https://oxfordporcelanas.vtexassets.com/arquivos/ids/197001-1200-1200?v=638918289273870000&width=1200&height=1200&aspect=true',
-    link:'https://www.oxfordporcelanas.com.br/reagente-ryo-maresia-caneca260/p?idsku=60602983&utm_source=google&utm_medium=cpc&utm_campaign=21148750230-Pmax-Novos-Clientes&gad_source=1&gad_campaignid=21155641121&gclid=Cj0KCQjwv4XUBhDBARIsAE6bQUQcJVEuDPfrjszhoU94OdWldu7ymvdsGHopN7Dcygv1ZSSCZ8961IEaAmfwEALw_wcB',
-    caption: 'Jogo de Canecas'
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_891437-MLB80214238854_112024-F-jogo-toalhas-de-algodao-4p-banho-e-rosto-bege-marrom-karsten.webp',
+    link:'https://www.mercadolivre.com.br/jogo-toalhas-de-algodao-4p-banho-e-rosto-bege-marrom-karsten/up/MLBU2705376355',
+    caption: 'Jogo de Toalhas'
   },
   {
     src:'https://http2.mlstatic.com/D_NQ_NP_2X_833495-MLB82421261479_022025-F-kit-4pcs-cozinha-escorredor-massa-arroz-telado-cesto-fritura.webp',
     link:'https://www.mercadolivre.com.br/kit-4pcs-cozinha-escorredor-massa-arroz-telado-cesto-fritura/up/MLBU3008878235?pdp_filters=item_id%3AMLB3974524573&matt_tool=38524122#origin=share&sid=share&wid=MLB3974524573&action=copy',
-    caption: 'Escorredores'
+    caption: 'Kit Escorredor de Arroz e Macarrão'
   },
   {
     src:'https://http2.mlstatic.com/D_NQ_NP_2X_872431-MLU72855739980_112023-F.webp',
@@ -94,12 +94,12 @@ export const REFERENCE_IMAGES = [
   {
     src:'https://http2.mlstatic.com/D_NQ_NP_2X_908773-MLB114046910881_072026-F-jogo-6-tacas-vinho-tinto-450ml-cristal-titanium-gastro.webp',
     link:'https://www.mercadolivre.com.br/jogo-6-tacas-vinho-tinto-450ml-cristal-titanium-gastro/up/MLBU610020055?pdp_filters=item_id%3AMLB4931476362&matt_tool=38524122#origin=share&sid=share&wid=MLB4931476362&action=copy',
-    caption: 'Taças de Vinho'
+    caption: 'Jogo Taças de Vinho'
   },
   {
     src:'https://http2.mlstatic.com/D_NQ_NP_2X_969681-MLA112308821144_062026-F.webp',
     link:'https://www.mercadolivre.com.br/kit-2-jarras-borossilicato-1-litro-tampa-inox-agua-saborizada-suco-cha-transparente/p/MLB74005625?pdp_filters=item_id%3AMLB4795826183&matt_tool=38524122#origin=share&sid=share&wid=MLB4795826183&action=copy',
-    caption: 'Jarras'
+    caption: 'Jarra de Vidro'
   },
   {
     src:'https://http2.mlstatic.com/D_NQ_NP_2X_868786-MLA114708738712_082026-F.webp',
@@ -129,7 +129,7 @@ export const REFERENCE_IMAGES = [
   {
     src:'https://http2.mlstatic.com/D_NQ_NP_2X_656887-MLA113963475859_062026-F.webp',
     link:'https://www.mercadolivre.com.br/kit-6-conjunto-potes-vidro-marmita-hermetico-640ml-fitiness-transparente/p/MLB74598116?pdp_filters=item_id%3AMLB7317386450&matt_tool=38524122#origin=share&sid=share&wid=MLB7317386450&action=copy',
-    caption:'Potes de Vidro'
+    caption:'Potes Hermeticos de Vidro'
   },
   {
     src:'https://m.media-amazon.com/images/I/917d07JP0ML._AC_SL1500_.jpg',
@@ -142,9 +142,19 @@ export const REFERENCE_IMAGES = [
     caption:'Potes Hermeticos Plasticos '
   },
   {
-    src:'https://http2.mlstatic.com/D_NQ_NP_2X_833874-MLU79332853197_092024-F.webp',
-    link:'https://www.mercadolivre.com.br/kit-8-potes-hermetico-porta-mantimentos-travas-shark-blue/p/MLB40320304?pdp_filters=item_id%3AMLB3892040635&matt_tool=38524122#origin=share&sid=share&wid=MLB3892040635&action=copy',
-    caption:'Potes Hermeticos Acrilico'
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_981706-MLB98090387143_112025-F-varal-de-chao-em-aco-reforcado-dobravel-com-abas-preto-mor.webp',
+    link:'https://www.mercadolivre.com.br/varal-de-chao-em-aco-reforcado-dobravel-com-abas-preto-mor/up/MLBU3560460910?pdp_filters=item_id%3AMLB5929336700&matt_tool=38524122#origin=share&sid=share&wid=MLB5929336700&action=copy',
+    caption:'Varal de Chão'
+  },
+  {
+    src:'https://http2.mlstatic.com/D_NQ_NP_2X_708522-MLA80947174743_112024-F.webp',
+    link:'https://http2.mlstatic.com/D_NQ_NP_2X_708522-MLA80947174743_112024-F.webp',
+    caption:'Porta Copos'
+  },
+  {
+    src:'https://m.magazineluiza.com.br/a-static/420x420/panela-de-pressao-brinox-42l-bege-vanilla-ceramic-life-pressure/magazineluiza/237084500/fc162b412f28b9c4e90c72959abec363.jpg',
+    link:'https://www.magazineluiza.com.br/panela-de-pressao-brinox-42l-bege-vanilla-ceramic-life-pressure/p/237084500/ud/udpp/?partner_id=64853&utm_source=pdp_desk&utm_medium=share&seller_id=magazineluiza',
+    caption:'Panela de Pressão'
   }
   
 ];

@@ -7,11 +7,11 @@ export const CONFIG = {
   hostNames: ['Amanda Leticia'],
   dateNum: '20',
   dateLabel: 'de setembro',
-  address: 'Rua ???',
+  address: 'Severino Gretter, 106 - Espinheiros, Joinville - SC',
   note: 'Pensa em algo',
 };
 
-export const CATEGORIES = ['Cozinha', 'Quarto', 'Sala', 'Banheiro', 'Diversos'];
+export const CATEGORIES = ['Cozinha', 'Quarto', 'Banheiro', 'Diversos'];
 
 // A lista inicial de presentes agora mora em lib/defaultGifts.js (lado do
 // servidor) — ela só é usada para "semear" o gifts.json na primeira vez
@@ -21,7 +21,6 @@ export const CATEGORY_ICONS = {
   Todos: LayoutGrid,
   Cozinha: ChefHat,
   Quarto: BedDouble,
-  Sala: Armchair,
   Banheiro: Bath,
   Diversos: Package,
 };
