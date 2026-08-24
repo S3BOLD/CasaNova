@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="arch-frame">
         <div className="house-icon">
           <svg viewBox="0 0 90 60">
-            <path d="M4 34 L45 4 L86 34" />
+            <path d="M8 34 L45 4 L86 34" />
             <path d="M58 10 L58 20 L68 20 L68 16" />
           </svg>
         </div>

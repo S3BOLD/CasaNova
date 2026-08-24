@@ -9,7 +9,7 @@ export default function HomePage({ onGoToGifts }) {
       <Hero />
 
       <section className="info-section">
-        {hostDisplay && <h2 className="info-hosts">{hostDisplay}</h2>}
+        
         {CONFIG.welcomeMessage?.length > 0 && (
           <div className="welcome-message">
             {CONFIG.welcomeMessage.map((paragraph, i) => (
