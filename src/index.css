@@ -206,6 +206,21 @@ button {
   color: var(--bronze-dark);
   margin: 0 0 14px;
 }
+.welcome-message {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed var(--line);
+}
+.welcome-message p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--ink);
+}
 .info-lines {
   display: flex;
   flex-direction: column;
