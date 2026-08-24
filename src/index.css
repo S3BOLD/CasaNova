@@ -104,7 +104,7 @@ button {
 }
 .house-icon {
   position: absolute;
-  top: -34px;
+  top: -1px;
   left: 37%;
   transform: translateX(-50%);
   width: 86px;
@@ -113,7 +113,7 @@ button {
 }
 .house-icon svg {
   width: 200%;
-  height: 200%;
+  height: 170%;
   stroke: currentColor;
   stroke-width: 1.4;
   fill: var(--bg);
@@ -131,7 +131,7 @@ button {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  font-size: clamp(30px, 8vw, 44px);
+  font-size: clamp(30px, 12vw, 30px);
   line-height: 1;
 }
 .hero-title-mid {
@@ -139,7 +139,7 @@ button {
   align-items: center;
   gap: 10px;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--bronze);
@@ -156,18 +156,19 @@ button {
   height: 5px;
   border-radius: 50%;
   background: var(--bronze);
-  margin: 22px auto;
+  margin: 11px auto;
 }
 .date-num {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
-  font-size: clamp(46px, 12vw, 64px);
+  font-size: clamp(38px, 10vw, 38px);
   line-height: 1;
   color: var(--bronze-dark);
+
 }
 .date-label {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--bronze);
@@ -177,7 +178,7 @@ button {
   position: relative;
   height: 1px;
   background: var(--bronze);
-  margin-top: 26px;
+  margin-top: 16px;
 }
 .arch-bottom-line::after {
   content: '';
