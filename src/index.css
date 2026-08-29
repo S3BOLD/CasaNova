@@ -104,7 +104,7 @@ button {
 }
 .house-icon {
   position: absolute;
-  top: -34px;
+  top: -30px;
   left: 37%;
   transform: translateX(-50%);
   width: 86px;
@@ -113,7 +113,7 @@ button {
 }
 .house-icon svg {
   width: 200%;
-  height: 200%;
+  height: 250%;
   stroke: currentColor;
   stroke-width: 1.4;
   fill: var(--bg);
@@ -131,7 +131,7 @@ button {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  font-size: clamp(30px, 8vw, 44px);
+  font-size: clamp(30px, 12vw, 36px);
   line-height: 1;
 }
 .hero-title-mid {
@@ -156,28 +156,30 @@ button {
   height: 5px;
   border-radius: 50%;
   background: var(--bronze);
-  margin: 22px auto;
+  margin: 8px auto;
 }
 .date-num {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
-  font-size: clamp(46px, 12vw, 64px);
+  font-size: clamp(38px, 12vw, 48px);
   line-height: 1;
   color: var(--bronze-dark);
+
 }
 .date-label {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--bronze);
-  margin-top: 4px;
+  margin-top: 8px;
+  
 }
 .arch-bottom-line {
   position: relative;
   height: 1px;
   background: var(--bronze);
-  margin-top: 26px;
+  margin-top: 30px;
 }
 .arch-bottom-line::after {
   content: '';
@@ -204,6 +206,21 @@ button {
   font-size: 26px;
   color: var(--bronze-dark);
   margin: 0 0 14px;
+}
+.welcome-message {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed var(--line);
+}
+.welcome-message p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--ink);
 }
 .info-lines {
   display: flex;
