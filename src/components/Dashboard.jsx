@@ -18,33 +18,6 @@ export default function Dashboard({ stats, activeFilter, onSelect, onSuggestClic
 
   return (
     <aside className="dashboard">
-      <div className="dash-card overview">
-        <div className="ring-wrap">
-          <svg viewBox="0 0 64 64">
-            <circle cx="32" cy="32" r={R} fill="none" stroke="var(--bg-panel)" strokeWidth="6" />
-            <circle
-              cx="32"
-              cy="32"
-              r={R}
-              fill="none"
-              stroke="var(--bronze)"
-              strokeWidth="6"
-              strokeLinecap="round"
-              style={{
-                transform: 'rotate(-90deg)',
-                transformOrigin: '32px 32px',
-                strokeDasharray: C,
-                strokeDashoffset: offset,
-                transition: 'stroke-dashoffset .5s ease',
-              }}
-            />
-          </svg>
-          <div className="ring-pct">{pct}%</div>
-        </div>
-        <div className="overview-text">
-          <strong>{stats.claimed}</strong> de {stats.total} vagas preenchidas
-        </div>
-      </div>
 
       <div>
         <p className="dash-title">Categorias</p>
