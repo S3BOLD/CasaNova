@@ -1,32 +1,29 @@
-import { CONFIG } from '../config.js';
-
 export default function Hero() {
   return (
-    <header className="hero">
-      <div className="arch-frame">
-        <div className="house-icon">
-          <svg viewBox="0 0 90 60">
-            <path d="M8 34 L45 4 L86 34" />
-            <path d="M58 10 L58 20 L68 20 L68 16" />
-          </svg>
-        </div>
+    <div className="invite-frame">
+      <svg className="sparkle sparkle-a" viewBox="0 0 24 24">
+        <path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z" fill="currentColor" />
+      </svg>
+      <svg className="sparkle sparkle-b" viewBox="0 0 24 24">
+        <path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z" fill="currentColor" />
+      </svg>
 
-        <h1 className="hero-title">
-          <span className="hero-title-big">Chá</span>
-          <span className="hero-title-mid">
-            <i className="dash" />
-            de casa
-            <i className="dash" />
-          </span>
-          <span className="hero-title-big">nova</span>
-        </h1>
-
-        <span className="tiny-dot" />
-
-        <div className="date-num">{CONFIG.dateNum}</div>
-        <div className="date-label">{CONFIG.dateLabel}</div>
-        <div className="arch-bottom-line" />
+      <div className="invite-roof">
+        <svg viewBox="0 0 90 40">
+          <path d="M2 38 L48 4 L88 36" />
+          <path d="M59 13 L59 6 L66 6 L66 18" />
+        </svg>
       </div>
-    </header>
+
+      <div className="invite-frame-body">
+        <p className="invite-eyebrow">Chá de</p>
+        <h1 className="invite-title">
+          Casa
+          <br />
+          Nova
+        </h1>
+      </div>
+      <div className="arch-bottom-line" />
+    </div>
   );
 }

@@ -21,7 +21,7 @@ export default function App() {
       {tab === 'gifts' && <GiftsPage />}
       {tab === 'references' && <ReferencesPage />}
 
-      <footer className="app-footer">feito com carinho para a casa nova</footer>
+      
     </>
   );
 }
