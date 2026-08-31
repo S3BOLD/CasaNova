@@ -12,8 +12,9 @@ export const CONFIG = {
   address: 'Severino Gretter, 106\nEspinheiros\nJoinville - SC',
   note: '',
   welcomeMessage: [
-    'Há alguns anos, esse momento foi sonhado, planejado, preparado e muito aguardado. E finalmente, chegou a hora de comemorar essa conquista ao lado de quem esteve comigo em cada etapa desse caminho.',
-    'Se você está aqui, é porque é muito importante para mim, esteve presente em conversas, conselhos e momentos especiais. Fico imensamente feliz em poder compartilhar com você uma conquista tão especial: o meu novo lar! ',
+    'Há alguns anos, esse momento foi sonhado, planejado, preparado e muito aguardado. E finalmente, chegou a hora de comemorar essa conquista ao lado de quem esteve comigo nas etapas desse caminho.',
+    'Se você está aqui, é porque é muito importante para mim, esteve presente em conversas, conselhos e momentos especiais.',
+    'Fico imensamente feliz em poder compartilhar com você uma conquista tão especial: o meu novo lar! ',
     'Quero te convidar para passar esse dia comigo, celebrando o início de uma nova e muito importante etapa da minha vida, com muita comida boa, risadas, carinho e uma grande comemoração!\nEspero você para tornar esse momento ainda mais especial!',
   ],
   giftBannerTitle: 'Ah, deixei aqui uma listinha com algumas ideias, caso você queira deixar uma lembrança sua. 🤎',
