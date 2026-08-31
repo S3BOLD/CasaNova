@@ -369,7 +369,7 @@ button {
 .page-title {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--bronze-dark);
   margin: 0 0 10px;
 }
