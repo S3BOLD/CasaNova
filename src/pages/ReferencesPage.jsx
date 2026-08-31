@@ -4,9 +4,9 @@ export default function ReferencesPage() {
   return (
     <main className="page references-page">
       <div className="page-header">
-        <p className="page-eyebrow">Referências</p>
-        <h2 className="page-title">Ideias para os presentes</h2>
-        <p className="page-sub">Algumas fotos para ajudar a escolher cor, modelo e estilo.</p>
+        <img src="src\referencias\Amandoca.jpeg" alt="Referências" className="page-header-img" />
+        <h2 className="page-title">Aqui estão algumas referências  dos itens listados, com isso você pode ter mais referências do que escolher :)</h2>
+        
       </div>
 
       {REFERENCE_IMAGES.length === 0 ? (

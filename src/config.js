@@ -16,8 +16,8 @@ export const CONFIG = {
     'Se você está aqui, é porque é muito importante para mim, esteve presente em conversas, conselhos e momentos especiais. Fico imensamente feliz em poder compartilhar com você uma conquista tão especial: o meu novo lar! ',
     'Quero te convidar para passar esse dia comigo, celebrando o início de uma nova e muito importante etapa da minha vida, com muita comida boa, risadas, carinho e uma grande comemoração!\nEspero você para tornar esse momento ainda mais especial!',
   ],
-  giftBannerTitle: 'Sua presença já é um presente!',
-  giftBannerText: 'Mas, se quiser contribuir com o meu lar, confira minha lista de presentes.',
+  giftBannerTitle: 'Ah, deixei aqui uma listinha com algumas ideias, caso você queira deixar uma lembrança sua. 🤎',
+  giftBannerText: '',
   footerLine: 'Conto com você!',
 };
 

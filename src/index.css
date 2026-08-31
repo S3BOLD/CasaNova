@@ -265,13 +265,16 @@ button {
 }
 .detail-sub {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.04em;
   color: var(--ink-soft);
   text-align: center;
 }
 .detail-sub.address {
   line-height: 1.6;
+  font-weight: bold;
+  font-size: 11px;
+
 }
 
 .gift-banner {
@@ -343,6 +346,18 @@ button {
   max-width: 480px;
   margin: 0 auto 32px;
 }
+.page-header-img {
+  width: 160px;
+  height: 160px;
+  max-width: 45vw;
+  max-height: 45vw;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #d6cebf;
+}
 .page-eyebrow {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 11.5px;
@@ -354,12 +369,12 @@ button {
 .page-title {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
-  font-size: clamp(26px, 5vw, 34px);
+  font-size: 20px;
   color: var(--bronze-dark);
   margin: 0 0 10px;
 }
 .page-sub {
-  font-size: 14px;
+  font-size: clamp(20px, 5vw, 28px);
   color: var(--ink-soft);
   margin: 0;
 }
@@ -918,11 +933,13 @@ button {
   grid-column: 1/-1;
 }
 .app-footer {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-style: italic;
+  font-weight: 600 !important;
+  font-size: 17px !important;
   text-align: center;
-  padding: 20px 24px 50px;
-  font-size: 12px;
+  padding: 35px 24px 50px;
   color: var(--ink-soft);
-  font-family: 'IBM Plex Mono', monospace;
 }
 
 @media (max-width: 860px) {

@@ -87,13 +87,13 @@ export default function HomePage({ onGoToGifts }) {
           <Gift size={22} className="gift-banner-icon" />
           <div className="gift-banner-text">
             {CONFIG.giftBannerTitle && <strong>{CONFIG.giftBannerTitle}</strong>}
-            {CONFIG.giftBannerText && <p>{CONFIG.giftBannerText}</p>}
           </div>
           <button onClick={onGoToGifts}>Ver lista de presentes</button>
         </div>
       )}
 
-      
+      <footer className="app-footer">Com carinho, Amanda Letícia.</footer>
     </main>
+    
   );
 }
