@@ -4,7 +4,7 @@ export default function ReferencesPage() {
   return (
     <main className="page references-page">
       <div className="page-header">
-        <img src="src\referencias\Amandoca.jpeg"  className="page-header-img" />
+        <img src="src/referencias/Amandoca.jpeg"  className="page-header-img" />
         <h2 className="page-title">Aqui estão algumas referências  dos itens listados, com isso você pode ter mais referências do que escolher :)</h2>
         
       </div>
